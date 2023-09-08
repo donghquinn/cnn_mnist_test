@@ -28,8 +28,8 @@ class CnnModel(nn.Module):
     # 전결합층 한정으로 가중치 초기화
     torch.nn.init.xavier_uniform_(self.fc.weight)
 
-    # 전결합층 한정으로 가중치 초기화
-    torch.nn.init.xavier_uniform_(self.fc.weight)
+    # # 전결합층 한정으로 가중치 초기화
+    # torch.nn.init.xavier_uniform_(self.fc.weight)
 
   def forward(self, x):
     out = self.layer1(x)
